@@ -1,0 +1,117 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ventanaregistro.ui'
+#
+# Created: Fri Jan 14 19:31:48 2011
+#      by: PyQt4 UI code generator 4.8.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    _fromUtf8 = lambda s: s
+
+class Ui_ventanaregistro(object):
+    def setupUi(self, ventanaregistro):
+        ventanaregistro.setObjectName(_fromUtf8("ventanaregistro"))
+        ventanaregistro.resize(727, 485)
+        self.verticalLayout = QtGui.QVBoxLayout(ventanaregistro)
+        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        self.label = QtGui.QLabel(ventanaregistro)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label.setFont(font)
+        self.label.setObjectName(_fromUtf8("label"))
+        self.verticalLayout.addWidget(self.label)
+        self.gridLayout = QtGui.QGridLayout()
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
+        self.label_2 = QtGui.QLabel(ventanaregistro)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.gridLayout.addWidget(self.label_2, 0, 0, 1, 1)
+        self.label_3 = QtGui.QLabel(ventanaregistro)
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.gridLayout.addWidget(self.label_3, 2, 0, 1, 1)
+        self.label_4 = QtGui.QLabel(ventanaregistro)
+        self.label_4.setObjectName(_fromUtf8("label_4"))
+        self.gridLayout.addWidget(self.label_4, 3, 0, 1, 1)
+        self.textonumero = QtGui.QLineEdit(ventanaregistro)
+        self.textonumero.setReadOnly(True)
+        self.textonumero.setObjectName(_fromUtf8("textonumero"))
+        self.gridLayout.addWidget(self.textonumero, 0, 1, 1, 1)
+        self.textonombre = QtGui.QLineEdit(ventanaregistro)
+        self.textonombre.setObjectName(_fromUtf8("textonombre"))
+        self.gridLayout.addWidget(self.textonombre, 2, 1, 1, 1)
+        self.textoequipo = QtGui.QLineEdit(ventanaregistro)
+        self.textoequipo.setObjectName(_fromUtf8("textoequipo"))
+        self.gridLayout.addWidget(self.textoequipo, 3, 1, 1, 1)
+        self.label_5 = QtGui.QLabel(ventanaregistro)
+        self.label_5.setObjectName(_fromUtf8("label_5"))
+        self.gridLayout.addWidget(self.label_5, 4, 0, 1, 1)
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem, 0, 2, 1, 1)
+        spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem1, 2, 4, 1, 1)
+        self.textolicencia = QtGui.QLineEdit(ventanaregistro)
+        self.textolicencia.setObjectName(_fromUtf8("textolicencia"))
+        self.gridLayout.addWidget(self.textolicencia, 1, 1, 1, 1)
+        self.label_6 = QtGui.QLabel(ventanaregistro)
+        self.label_6.setObjectName(_fromUtf8("label_6"))
+        self.gridLayout.addWidget(self.label_6, 1, 0, 1, 1)
+        self.botonretirar = QtGui.QPushButton(ventanaregistro)
+        self.botonretirar.setObjectName(_fromUtf8("botonretirar"))
+        self.gridLayout.addWidget(self.botonretirar, 3, 3, 1, 1)
+        self.botonagregar = QtGui.QPushButton(ventanaregistro)
+        self.botonagregar.setObjectName(_fromUtf8("botonagregar"))
+        self.gridLayout.addWidget(self.botonagregar, 1, 3, 1, 1)
+        self.cajacategorias = QtGui.QComboBox(ventanaregistro)
+        self.cajacategorias.setObjectName(_fromUtf8("cajacategorias"))
+        self.gridLayout.addWidget(self.cajacategorias, 4, 1, 1, 1)
+        self.verticalLayout.addLayout(self.gridLayout)
+        self.treearbol = QtGui.QTreeWidget(ventanaregistro)
+        self.treearbol.setObjectName(_fromUtf8("treearbol"))
+        self.verticalLayout.addWidget(self.treearbol)
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
+        spacerItem2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem2)
+        spacerItem3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem3)
+        self.botoncerrar = QtGui.QPushButton(ventanaregistro)
+        self.botoncerrar.setObjectName(_fromUtf8("botoncerrar"))
+        self.horizontalLayout.addWidget(self.botoncerrar)
+        spacerItem4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem4)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+
+        self.retranslateUi(ventanaregistro)
+        QtCore.QObject.connect(self.botoncerrar, QtCore.SIGNAL(_fromUtf8("clicked()")), ventanaregistro.close)
+        QtCore.QMetaObject.connectSlotsByName(ventanaregistro)
+        ventanaregistro.setTabOrder(self.textolicencia, self.textonombre)
+        ventanaregistro.setTabOrder(self.textonombre, self.textoequipo)
+        ventanaregistro.setTabOrder(self.textoequipo, self.cajacategorias)
+        ventanaregistro.setTabOrder(self.cajacategorias, self.botonagregar)
+        ventanaregistro.setTabOrder(self.botonagregar, self.botonretirar)
+        ventanaregistro.setTabOrder(self.botonretirar, self.treearbol)
+        ventanaregistro.setTabOrder(self.treearbol, self.botoncerrar)
+        ventanaregistro.setTabOrder(self.botoncerrar, self.textonumero)
+
+    def retranslateUi(self, ventanaregistro):
+        ventanaregistro.setWindowTitle(QtGui.QApplication.translate("ventanaregistro", "Contrarreloj - Registro", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("ventanaregistro", "<center>Registro</center>", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_2.setText(QtGui.QApplication.translate("ventanaregistro", "Número", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_3.setText(QtGui.QApplication.translate("ventanaregistro", "Nombre", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_4.setText(QtGui.QApplication.translate("ventanaregistro", "Equipo", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_5.setText(QtGui.QApplication.translate("ventanaregistro", "Categoría", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_6.setText(QtGui.QApplication.translate("ventanaregistro", "Licencia", None, QtGui.QApplication.UnicodeUTF8))
+        self.botonretirar.setText(QtGui.QApplication.translate("ventanaregistro", "Retirar el último elemento", None, QtGui.QApplication.UnicodeUTF8))
+        self.botonagregar.setText(QtGui.QApplication.translate("ventanaregistro", "Agregar", None, QtGui.QApplication.UnicodeUTF8))
+        self.treearbol.headerItem().setText(0, QtGui.QApplication.translate("ventanaregistro", "Número", None, QtGui.QApplication.UnicodeUTF8))
+        self.treearbol.headerItem().setText(1, QtGui.QApplication.translate("ventanaregistro", "Licencia", None, QtGui.QApplication.UnicodeUTF8))
+        self.treearbol.headerItem().setText(2, QtGui.QApplication.translate("ventanaregistro", "Nombre", None, QtGui.QApplication.UnicodeUTF8))
+        self.treearbol.headerItem().setText(3, QtGui.QApplication.translate("ventanaregistro", "Equipo", None, QtGui.QApplication.UnicodeUTF8))
+        self.treearbol.headerItem().setText(4, QtGui.QApplication.translate("ventanaregistro", "Categoría", None, QtGui.QApplication.UnicodeUTF8))
+        self.botoncerrar.setText(QtGui.QApplication.translate("ventanaregistro", "Cerrar", None, QtGui.QApplication.UnicodeUTF8))
+

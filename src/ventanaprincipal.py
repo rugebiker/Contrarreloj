@@ -1,0 +1,120 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ventanaprincipal.ui'
+#
+# Created: Fri Jan 14 18:24:45 2011
+#      by: PyQt4 UI code generator 4.8.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    _fromUtf8 = lambda s: s
+
+class Ui_ventanaprincipal(object):
+    def setupUi(self, ventanaprincipal):
+        ventanaprincipal.setObjectName(_fromUtf8("ventanaprincipal"))
+        ventanaprincipal.resize(473, 240)
+        self.centralwidget = QtGui.QWidget(ventanaprincipal)
+        self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        self.verticalLayout = QtGui.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
+        self.labelTiempo = QtGui.QLabel(self.centralwidget)
+        font = QtGui.QFont()
+        font.setPointSize(48)
+        self.labelTiempo.setFont(font)
+        self.labelTiempo.setObjectName(_fromUtf8("labelTiempo"))
+        self.verticalLayout.addWidget(self.labelTiempo)
+        self.gridLayout = QtGui.QGridLayout()
+        self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
+        self.botonIniciar = QtGui.QPushButton(self.centralwidget)
+        self.botonIniciar.setObjectName(_fromUtf8("botonIniciar"))
+        self.gridLayout.addWidget(self.botonIniciar, 2, 0, 1, 1)
+        self.botonCortar = QtGui.QPushButton(self.centralwidget)
+        self.botonCortar.setObjectName(_fromUtf8("botonCortar"))
+        self.gridLayout.addWidget(self.botonCortar, 2, 2, 1, 1)
+        self.botonborrarultimo = QtGui.QPushButton(self.centralwidget)
+        self.botonborrarultimo.setObjectName(_fromUtf8("botonborrarultimo"))
+        self.gridLayout.addWidget(self.botonborrarultimo, 2, 4, 1, 1)
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem, 2, 3, 1, 1)
+        spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem1, 2, 1, 1, 1)
+        self.label_2 = QtGui.QLabel(self.centralwidget)
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.gridLayout.addWidget(self.label_2, 4, 0, 1, 1)
+        self.lcdtotalparcicipantes = QtGui.QLCDNumber(self.centralwidget)
+        self.lcdtotalparcicipantes.setObjectName(_fromUtf8("lcdtotalparcicipantes"))
+        self.gridLayout.addWidget(self.lcdtotalparcicipantes, 4, 1, 1, 1)
+        self.label = QtGui.QLabel(self.centralwidget)
+        self.label.setObjectName(_fromUtf8("label"))
+        self.gridLayout.addWidget(self.label, 4, 2, 1, 1)
+        self.lcdllegaron = QtGui.QLCDNumber(self.centralwidget)
+        self.lcdllegaron.setObjectName(_fromUtf8("lcdllegaron"))
+        self.gridLayout.addWidget(self.lcdllegaron, 4, 3, 1, 1)
+        self.verticalLayout.addLayout(self.gridLayout)
+        ventanaprincipal.setCentralWidget(self.centralwidget)
+        self.menubar = QtGui.QMenuBar(ventanaprincipal)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 473, 21))
+        self.menubar.setObjectName(_fromUtf8("menubar"))
+        self.menuOpciones = QtGui.QMenu(self.menubar)
+        self.menuOpciones.setObjectName(_fromUtf8("menuOpciones"))
+        self.menuAyuda = QtGui.QMenu(self.menubar)
+        self.menuAyuda.setObjectName(_fromUtf8("menuAyuda"))
+        self.menuArchivo = QtGui.QMenu(self.menubar)
+        self.menuArchivo.setObjectName(_fromUtf8("menuArchivo"))
+        ventanaprincipal.setMenuBar(self.menubar)
+        self.statusbar = QtGui.QStatusBar(ventanaprincipal)
+        self.statusbar.setObjectName(_fromUtf8("statusbar"))
+        ventanaprincipal.setStatusBar(self.statusbar)
+        self.actionAjustes_principales = QtGui.QAction(ventanaprincipal)
+        self.actionAjustes_principales.setObjectName(_fromUtf8("actionAjustes_principales"))
+        self.actionLlenar_numeros = QtGui.QAction(ventanaprincipal)
+        self.actionLlenar_numeros.setObjectName(_fromUtf8("actionLlenar_numeros"))
+        self.actionResultados = QtGui.QAction(ventanaprincipal)
+        self.actionResultados.setObjectName(_fromUtf8("actionResultados"))
+        self.actionSalir = QtGui.QAction(ventanaprincipal)
+        self.actionSalir.setObjectName(_fromUtf8("actionSalir"))
+        self.actionAcerca_de = QtGui.QAction(ventanaprincipal)
+        self.actionAcerca_de.setObjectName(_fromUtf8("actionAcerca_de"))
+        self.actionRegistro = QtGui.QAction(ventanaprincipal)
+        self.actionRegistro.setObjectName(_fromUtf8("actionRegistro"))
+        self.actionAcerca_de_QT = QtGui.QAction(ventanaprincipal)
+        self.actionAcerca_de_QT.setObjectName(_fromUtf8("actionAcerca_de_QT"))
+        self.menuOpciones.addAction(self.actionRegistro)
+        self.menuOpciones.addAction(self.actionLlenar_numeros)
+        self.menuOpciones.addAction(self.actionResultados)
+        self.menuAyuda.addAction(self.actionAcerca_de)
+        self.menuAyuda.addAction(self.actionAcerca_de_QT)
+        self.menuArchivo.addAction(self.actionAjustes_principales)
+        self.menuArchivo.addAction(self.actionSalir)
+        self.menubar.addAction(self.menuArchivo.menuAction())
+        self.menubar.addAction(self.menuOpciones.menuAction())
+        self.menubar.addAction(self.menuAyuda.menuAction())
+
+        self.retranslateUi(ventanaprincipal)
+        QtCore.QMetaObject.connectSlotsByName(ventanaprincipal)
+
+    def retranslateUi(self, ventanaprincipal):
+        ventanaprincipal.setWindowTitle(QtGui.QApplication.translate("ventanaprincipal", "Contrarreloj", None, QtGui.QApplication.UnicodeUTF8))
+        self.labelTiempo.setText(QtGui.QApplication.translate("ventanaprincipal", "<center>00:00:00</center>", None, QtGui.QApplication.UnicodeUTF8))
+        self.botonIniciar.setText(QtGui.QApplication.translate("ventanaprincipal", "Iniciar/Parar", None, QtGui.QApplication.UnicodeUTF8))
+        self.botonCortar.setText(QtGui.QApplication.translate("ventanaprincipal", "Cortar", None, QtGui.QApplication.UnicodeUTF8))
+        self.botonborrarultimo.setText(QtGui.QApplication.translate("ventanaprincipal", "Borrar el último", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_2.setText(QtGui.QApplication.translate("ventanaprincipal", "Inscritos:", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("ventanaprincipal", "Han\n"
+"llegado:", None, QtGui.QApplication.UnicodeUTF8))
+        self.menuOpciones.setTitle(QtGui.QApplication.translate("ventanaprincipal", "&Opciones", None, QtGui.QApplication.UnicodeUTF8))
+        self.menuAyuda.setTitle(QtGui.QApplication.translate("ventanaprincipal", "A&yuda", None, QtGui.QApplication.UnicodeUTF8))
+        self.menuArchivo.setTitle(QtGui.QApplication.translate("ventanaprincipal", "&Archivo", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionAjustes_principales.setText(QtGui.QApplication.translate("ventanaprincipal", "&Ajustes principales", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionLlenar_numeros.setText(QtGui.QApplication.translate("ventanaprincipal", "&Llenar números", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionResultados.setText(QtGui.QApplication.translate("ventanaprincipal", "R&esultados", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionSalir.setText(QtGui.QApplication.translate("ventanaprincipal", "&Salir", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionAcerca_de.setText(QtGui.QApplication.translate("ventanaprincipal", "&Acerca de", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionRegistro.setText(QtGui.QApplication.translate("ventanaprincipal", "&Registro", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionAcerca_de_QT.setText(QtGui.QApplication.translate("ventanaprincipal", "A&cerca de QT", None, QtGui.QApplication.UnicodeUTF8))
+
