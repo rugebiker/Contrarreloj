@@ -1,5 +1,0 @@
-Resultados de 2da fuerza
-
-Lugar   Tiempo          Número   Nombre                         Equipo 
-
-1       0:00:03.417     3        alvarezp                       gultij 

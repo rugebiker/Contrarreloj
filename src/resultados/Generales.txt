@@ -1,7 +1,0 @@
-Resultados Generales
-
-Lugar   Tiempo          Número   Nombre                         Equipo                         Categoría 
-
-1       0:00:02.583     2        Dualbus                        Ciclismo bc                    1ra fuerza 
-2       0:00:03.417     3        alvarezp                       gultij                         2da fuerza 
-3       0:00:03.856     1        Ruben                          algo                           1ra fuerza 

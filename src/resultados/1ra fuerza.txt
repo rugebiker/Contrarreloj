@@ -1,6 +1,0 @@
-Resultados de 1ra fuerza
-
-Lugar   Tiempo          Número   Nombre                         Equipo 
-
-1       0:00:02.583     2        Dualbus                        Ciclismo bc 
-2       0:00:03.856     1        Ruben                          algo 
